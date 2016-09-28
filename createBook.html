@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Create book</title>
+	<link rel="stylesheet" href="externos/css/bootstrap.min.css">
+	<style>
+		input {
+			margin: 5px;
+
+	</style>
+	<script src="src/ctrl/initialize.js"></script>
+	<script src="src/model/Book.js"></script>
+	<script src="src/view/createBook.js"></script>
+	<script>
+  		 window.addEventListener("load", pl.view.createBook.setupUserInterface);
+    </script>
+</head>
+<body>
+<div class="jumbotron text-center">
+<h1>Biblioteca ORGANIZACIÓN: </h1><p>Insertar nuevo libro</p>
+
+</div>
+
+	<div class="container">
+
+	<hr>
+	<br>
+
+		<div class="row">
+
+		  <form id="Book">
+			<div class="col-lg-12">
+				<div class="form-group col-lg-3">
+			  	<label>ISBN: </label> <input name="isbn" class="form-control"/>
+			  </div>
+			</div>
+
+			<div class="col-lg-12">
+			  <div class="form-group col-lg-3">
+			    <p><label>Título: </label> <input name="title"  class="form-control" /></p>
+			  </div>
+			</div>
+			<div class="col-lg-12">
+			   <div class="form-group col-lg-3">
+			   	<p><label>Año: </label> <input name="year" class="form-control" /></p>
+			  </div>
+			</div>
+			  <p><button type="button" name="commit" class="btn btn-default">Guardar</button></p>
+
+		  </form>
+		  <p><nav><a href="index.html">Volver al menú principal</a></nav></p>
+
+
+	</div>
+</div>
+
+</body>
+</html>

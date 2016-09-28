@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minimal JS Front-End App Example</title>
+  <link rel="stylesheet" href="externos/css/bootstrap.min.css">
+  <script src="src/ctrl/initialize.js"></script>
+  <script src="src/model/Book.js"></script>
+  <script src="src/view/deleteBook.js"></script>
+  <script>
+   window.addEventListener("load", pl.view.deleteBook.setupUserInterface);
+  </script>
+</head>
+<body>
+
+
+<div class="jumbotron text-center">
+  <h1>Biblioteca ORGANIZACIÓN: </h1><p>Borrar libro</p>
+</div>
+
+<div class="container">
+
+  <form id="Book">
+    <p>
+      <label>Seleccionar libro:
+        <select name="selectBook"><option value=""> --- </option></select>
+      </label>
+    </p>
+    <p><button type="button" name="commit" class="btn btn-default">Borrar</button></p>
+  </form>
+  <nav><a href="index.html">Back to main menu</a></nav>
+
+</div>
+
+</body>
+</html>

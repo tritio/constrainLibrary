@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Biblioteca </title>
+	<link rel="stylesheet" href="externos/css/bootstrap.min.css">
+
+	<style>
+		.jumbotron {
+		    background-color: #f4511e; /* Orange */
+		    color: #ffffff;
+		    padding: 100px 25px;
+		}
+
+		.btn.btn-default.btn-lg {
+			margin: 20px 20px;
+			display: block;
+		}
+
+</style>
+
+<script src="src/model/Book.js"></script>
+
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1>Biblioteca ORGANIZACIÓN</h1>
+  <p>Publicaciones y artículos avalados por la ORGANIZACIÓN</p>
+  <form class="form-inline">
+			    <input type="email" class="form-control" size="50" placeholder="Email Address">
+			    <button type="button" class="btn btn-danger">Subscribe</button>
+			</form>
+</div>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class=" col-sm-6 ">
+			<h4>Opciones</h4>
+
+				<p>Esta aplicación soporta las siguientes operaciones:</p>
+				  <menu>
+				    <a href="listBooks.html"><button  class="btn btn-default btn-lg">
+				      Listar libros
+				    </button></a>
+				    <a href="createBook.html"><button  class="btn btn-default btn-lg">
+				      Añadir libro
+				    </button></a>
+				    <a href="updateBook.html"><button  class="btn btn-default btn-lg">
+				      Actualizar libro
+				    </button></a>
+				    <a href="deleteBook.html"><button  class="btn btn-default btn-lg">
+				      Borrar libro
+				    </button></a>
+				   <button  onclick="Book.clearData()"  class="btn btn-default btn-lg">
+				      Limpiar BBDD
+				    </button>
+				    <button type="button" onclick="Book.createTestData()"  class="btn btn-default btn-lg">
+				      Crear  test data
+				    </button>
+				  </menu>
+
+			</div>
+
+			<div class=" col-sm-6 ">
+				<h4>Columna 2</h4>
+				Maecenas varius, nibh eu gravida elementum, lectus felis lobortis ante, quis placerat ante velit et mauris. Curabitur quam ipsum, convallis et bibendum in, feugiat id metus. Integer fringilla, purus malesuada consectetur iaculis, mi urna placerat velit, ac pharetra massa nunc non eros. Cras in suscipit arcu. Maecenas dictum iaculis ligula sodales pharetra. Nullam diam nibh, ornare sed auctor a, faucibus ac urna. Quisque mauris arcu, porttitor ac sodales et, rutrum at urna. Vivamus vitae posuere turpis. Mauris porttitor tellus nec libero bibendum scelerisque. Pellentesque sit amet ornare justo. In dolor nulla, lacinia vitae luctus eu, gravida eget est. Integer tempor purus a arcu vehicula, at dictum ipsum ultricies. Quisque congue ipsum ut dolor convallis, vitae pretium metus lobortis. Aliquam egestas, metus at aliquam viverra, leo justo tempor augue, ut ornare purus mauris laoreet velit. Nunc aliquet urna vel tempus ultrices.
+
+
+			</div>
+
+
+
+
+
+		</div><!-- fin row -->
+
+
+
+	</div><!-- fin container -->
+
+
+
+
+</body>
+</html>

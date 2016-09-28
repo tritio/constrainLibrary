@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Simple JS Front-End App Example</title>
+	<link rel="stylesheet" href="externos/css/bootstrap.min.css">
+  <script src="src/ctrl/initialize.js"></script>
+  <script src="src/model/Book.js"></script>
+  <script src="src/view/updateBook.js"></script>
+  <script>
+   window.addEventListener("load", pl.view.updateBook.setupUserInterface);
+  </script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+	<h1>Biblioteca ORGANIZACIÓN: </h1><p>Actualizar libro</p>
+</div>
+
+<div class="container">
+
+  <form id="Book" action="">
+    <p>
+      <label>Select book:
+        <select name="selectBook" class="form-control"><option value=""> --- </option></select>
+      </label>
+    </p>
+    <p><label>ISBN: <output name="isbn" /></label></p>
+    <p><label>Title: <input name="title" /></label></p>
+    <p><label>Year: <input name="year" /></label></p>
+    <p><button type="button" name="commit">Save Changes</button></p>
+  </form>
+  <nav><a href="index.html">Back to main menu</a></nav>
+
+</div>
+
+</body>
+</html>
